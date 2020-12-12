@@ -1,0 +1,1562 @@
+/* Based on template from csslayoutgenerator.com */
+
+body {
+    font: 12px/18px'oswald', cursive;
+    background-color:#eaeaea;
+
+}
+
+
+
+
+
+strong {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'oswald';
+    font-weight: bold;
+}
+
+
+
+h2 {
+    font-size: 2em;
+    padding: 1em 0em;
+    padding-bottom: 5%;
+    font-family: 'oswald', cursive;
+
+}
+
+
+
+img {
+    width: 100%;
+
+    
+}
+
+
+
+a.smoothScroll {
+    display:inline;
+    padding: 12px 16px;
+}
+
+
+
+
+
+
+
+/* Header - kun til forsiden
+-----------------------------------------------------------------------------*/
+
+.header {
+     background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    list-style: none;
+    overflow: hidden;
+    background-color: #EFEFEF;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    border-right: none;
+    text-decoration:none;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'oswald';
+    color:black;
+    border-bottom: 1px solid black;
+}
+
+.header ul a:hover {
+   color: black;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 45px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 350px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+
+/* Header - til undersiderne
+-----------------------------------------------------------------------------*/
+
+.header_underside {
+background: rgb(77,97,134);
+background: linear-gradient(90deg, rgba(77,97,134,1) 0%, rgba(94,73,78,1) 69%);
+    position:relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.header_underside ul {
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+.header_underside ul a {
+    display: block;
+    padding: 20px;
+    border-right: none;
+    text-decoration:none;
+    text-align: center;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 1.4em;
+     font-family: 'oswald';
+    color:black;
+}
+
+.header_underside ul a:hover {
+   color: grey;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+
+.header_underside .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header_underside .menu-icon {
+    padding: 45px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header_underside .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header_underside .menu-icon .nav-icon:before {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header_underside .menu-icon .nav-icon:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header_underside .menu-btn {
+    display: none;
+}
+
+.header_underside .menu-btn:checked ~ .menu {
+    max-height: 350px;
+}
+
+.header_underside .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header_underside .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header_underside .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+#footer-billede{
+    margin-top: -15%;
+    width: 100%;
+    
+}
+/*
+
+#myVideo {width:100%;
+}
+*/
+
+
+
+#socialmedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  margin-top: -50px;
+  font-size: 20px;
+     position: relative;
+}
+
+.fa {
+  padding: 20px;
+  
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 5px;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #E5E5E5;
+  color: black;
+}
+
+.fa-youtube {
+  background: #E5E5E5;
+  color: black;
+}
+
+.fa-instagram {
+  background: #E5E5E5;
+  color: black;
+}
+
+#text-footer{
+    display: none;
+    position: relative;
+}
+
+#text-footer a{
+    color:white;
+}
+
+
+
+/* forside
+-----------------------------------------------------------------------------*/
+
+.smooth {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5em 3em;
+            width: 10em;
+            border-radius: 1.5em;
+            color: #4D6186;
+            background-color: #E5E5E5;
+            transition-duration: 0.3s;
+        }
+
+        .smooth:hover,
+        smooth:focus {
+            opacity: 79%;
+        }
+
+
+
+
+article img {
+    padding: 0.1em;
+
+}
+
+#article1 {background-color: #4D6186;
+    color:white;
+}
+
+
+
+p {
+    padding: 0.4em 0;
+}
+
+
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  min-width: 373px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  margin-top:40px;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  opacity: 0.8;
+    top: 50%;
+ left: 50%;
+ transform: translate(-50%, -145%);
+  text-align: center;
+   
+    border-radius: 0.5em;
+    
+}
+
+
+.text_portrait {
+  margin-top:40px;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  opacity: 0.8;
+    top: 50%;
+ left: 50%;
+ transform: translate(-50%, -155%);
+  text-align: center;
+   
+    border-radius: 0.5em;
+    
+}
+
+.text_produkt {
+  margin-top:40px;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -145%);
+  text-align: center;
+  border-radius: 0.5em;
+    
+}
+
+.text {
+/*  opacity:2;*/
+  color: white;
+  font-size: 3em;
+  padding: 16px 2px;
+}
+
+.text i {
+font-size: 0.6em;
+}
+
+/*
+.text t {
+font-size: 0.6em;
+margin-left:3%;
+}
+
+.text l {
+font-size: 0.6em;
+margin-left:3%;
+
+  
+}
+*/
+
+#InfographicFirstPage{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* priser og ydelser
+-----------------------------------------------------------------------------*/
+
+#p_fotos {background-color: #4D6186;
+color:white;}
+
+#produkt_fotos {background-color: #4D6186;
+color:white;}
+
+
+
+
+
+#priser_ydelser {background-color: #4D6186;
+color:white;
+ 
+}
+
+#priser_ydelser h2 {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+a {text-decoration: none;}
+
+#article_ydelser {background-color:#E5E5E5;
+}
+
+/*
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text2 {
+  opacity:2;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+*/
+
+/*
+.container:hover .middle2 {
+  opacity: 1;
+}
+*/
+
+#priser_ydelser img {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom:-2%;
+}
+
+
+/*
+#p_fotos h2 {
+    margin-left: 7%;
+    margin-right: 7%;
+    line-height: 1.0em;
+}
+*/
+
+#infographic2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#infographic3 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#desctop-infographic1{
+    display: none;
+}
+
+
+#produkt_fotos h2 {
+    margin-left: 5%;
+    line-height: 1.0em;
+}
+
+ .infographic4 {
+  align-items: center;
+  font-size: 14px;
+    color: white;
+    margin-left: 5%;
+     margin-right: 5%;
+    }
+
+#infographicstor img {
+    display: none;
+}
+
+
+
+
+/* Booking
+-----------------------------------------------------------------------------*/
+    
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+    position: sticky;
+}
+
+/*
+input[type=submit] {
+  background-color: #4D6186;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+*/
+
+
+.submit {
+  background-color: #4D6186;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+    margin-left:35%;
+    margin-top:-5%;
+    font-size:3em;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+#Emailform{
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  padding: 5%;
+}   
+
+
+.Email-book h1{
+    font-family: 'Oswald', sans-serif
+}
+
+#Email-kommentar input {
+    height: 200px;
+
+}
+
+
+
+/* Om JK
+-----------------------------------------------------------------------------*/
+
+
+
+#om_redigering{
+    font-size: 18px;
+    line-height: 1.5em;
+   padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+#redigering_img {width:70%;
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:-2%;}
+
+    
+#omJK-text{
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+#JK-text-desctop{
+    display: none;
+}
+
+#JK-text h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+ #map {
+     margin-top: 20px;
+        width: 100%;
+        height: 600px;
+    }
+
+#lokation h1{
+
+font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin-top:-5%;
+    margin-bottom: 3%;
+}
+
+#billedeafejer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#titel-text-omJK{
+    display: none;
+}
+
+
+    @media only screen and (min-width: 375px) {
+        
+        
+    #myVideo {width:100%;
+       }
+        
+
+/*
+#footer-gif{
+    margin-top: 0%;
+
+    
+}
+*/
+        
+  /* mobile version - om JK
+-----------------------------------------------------------------------------*/  
+        
+        #redigering_img {width:100%;}    
+        
+    #article_redigering h2 {text-align: center;
+font-size:2.5em;
+margin-top:5%;}
+        
+        #article_redigering p {
+ font-size: 18px;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+        margin-top:2%;
+         margin-bottom:2%;}
+
+#om_redigering{
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+        
+        
+        
+   /* mobile version - booking
+-----------------------------------------------------------------------------*/      
+        
+    #Emailform{
+    font-size:2em;  
+} 
+
+/*
+        input[type=submit] {
+  padding: 12px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+     font-size:1em;
+            margin-left:30%   
+}
+*/
+        
+        
+        
+   /* mobile version - priser og ydelser
+-----------------------------------------------------------------------------*/   
+
+        #produkt_fotos h2 {text-align: center;
+        padding-top:13%;}        
+#p_fotos h2 {
+    text-align: center;
+    padding-top:13%;
+  
+}
+#priser_ydelser h2 {text-align: center;
+    padding-top:13%;}
+        
+#priser_ydelser h1 {text-align: center;
+        }
+        
+.collage_galleri {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-gap:5px;
+    margin:0em;
+}
+        
+
+.collage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-gap:5px;
+    margin:0em;
+}
+        
+
+        
+        
+        
+
+ /* mobile version - forside
+-----------------------------------------------------------------------------*/
+        
+    
+    #trustpilot_billede {
+        width:70%;
+        padding-left:24%;;
+        margin-top:3em;
+    }
+
+    #anbefaling h3 {font-size:2.8em;
+    padding-top:1.2em;
+        padding-left:32%;
+
+}
+  
+    .next_button {display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5em 3em;
+        margin-left:25%;
+            width: 10em;
+            border-radius: 1.5em;
+            color:#E5E5E5;
+            background-color: #4D6186;
+            transition-duration: 0.3s;
+        }
+
+
+        .next_button:hover,
+        next_button:focus {
+            opacity: 79%;
+        }
+    
+    .next_button i {font-size:3em;
+margin-left: auto;
+    margin-right: auto;
+     }
+
+    #myDIV {font-size:1.3em;
+           padding:1.2em;
+    line-height: 1.8em;}
+    
+    
+    #du_skal {background-color: #4D6186;
+    margin-top:10%;}
+    
+    
+    #du_skal h2 {text-align: center;
+    color:white;
+   padding-top:15%;
+        line-height: 1.6em;}
+    
+     #du_skal h3 {text-align: center;
+/*         font: 'oswald';  */
+    color:white;
+    font-size: 1.5em;
+ padding:1.5%;
+        line-height: 1.6em;}
+        
+   
+        #knap {padding-left:25%;
+padding-top:5%;
+    padding-bottom: 12%;
+}
+
+#knap i {font-size:1.8em;}
+        
+    
+        #article1 h3 {font-size:1.5em;
+        padding:2em;
+        line-height: 1.5em;} 
+        
+        #article1 {padding-bottom: 5%;}
+        
+        
+        
+  .header #logo {width:120px;
+    margin-top:-5%;}
+    
+    
+  .header_underside #logo {width:120px;
+    margin-top:-5%;}
+    
+    h1 {
+        text-align: center;
+         padding-top: 8%;
+        font-size: 3em;
+        font-family: 'oswald';
+    }
+ 
+        
+     
+        article img {
+    padding: 0em;
+        max-width:100%;}
+        
+    
+        
+        .image {
+  
+  min-width: 375px;
+  
+
+        }
+        
+      
+        
+          .header #logo {width:200px;
+              padding-top:8.5%;
+              padding-left:2%;
+}
+        
+          .header_underside #logo {width:200px;
+              padding-top:8.5%;
+              padding-left:2%;
+}
+        
+        #collage {display:block;}
+
+#collage_2 {display: block;}
+        
+   
+        }
+
+   
+    @media only screen and (min-width: 480px) {
+        
+        #knap {padding-left:32%;
+
+}
+        
+        #anbefaling h3 {
+        padding-left:29%;
+
+}
+        
+         #myDIV {
+           padding:1em;}
+        
+ .next_button {
+        margin-left:32%;
+            
+        }       
+
+        
+        
+.header #logo {width:135px;
+}
+        
+        .header_underside #logo {width:135px;
+}
+    
+        
+}
+
+
+    /* media only screnn part 4
+-----------------------------------------------------------------------------*/
+
+        @media only screen and (min-width: 600px) {
+            
+
+.header #logo {width:135px;
+    margin-top:-4%
+    
+            }
+            
+            
+            .header_underside #logo {width:135px;
+    margin-top:-4%
+    
+            }
+}
+
+        
+    @media only screen and (min-width: 768px) {
+              
+
+    
+     .header #logo {width:130px;
+        margin-top:-2.8%;}
+        
+            
+     .header_underside #logo {width:130px;
+        margin-top:-2.8%;}
+        
+          
+
+        h1 {
+       
+        font-size: 3em;
+
+    }
+
+   
+}
+            
+           
+   
+   
+
+@media only screen and (min-width: 1000px) {
+    
+    
+    #footer-gif{
+    margin-top: -25%;
+
+
+    
+}
+    
+ 
+    
+    #myVideo {width:100%;
+      
+    }
+    
+    
+    
+     /* desktop - priser og ydelser
+-----------------------------------------------------------------------------*/ 
+
+    #article_redigering p {
+    line-height: 1.5em;
+    margin-left: 15%;
+        margin-right: 15%;
+        margin-top:0%;
+     }
+    
+    
+    #redigering_img {width:70%;}
+    
+ .collage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-gap:50px;
+    margin:5em;
+}
+
+.collage_galleri {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-gap:50px;
+    margin:5em;
+}
+    
+    #priser_ydelser h2 {text-align: center;
+    padding-top:3%;}
+    
+    #desctop-infographic1 {
+    display: block;
+        padding-left:8%;
+        padding-bottom: 2%;
+
+}
+    #priser_ydelser img{
+        margin-left: 0%;
+        margin-bottom: 0%;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* desktop - forside 
+-----------------------------------------------------------------------------*/
+    
+    
+    #trustpilot {display: flex;} 
+    
+    #trustpilot_box {width:42%;
+        text-align: center; }
+    
+    #infographicfirstpage1 img {
+        margin-bottom: 200px;
+    }
+    
+    
+    #trustpilot_billede {
+        width:40%;
+        padding:6em;
+        margin-left:36%;
+        margin-top:5.5em;
+    }
+    
+    #anbefaling {
+    width:50%;
+
+    }
+    
+    #anbefaling h3 {font-size:2em;
+    padding-top:3.9em;
+        padding-left:2.4%;
+
+}
+    
+    
+    .next_button {display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 0.5em 1.5em;
+            width: 5em;
+            border-radius: 1em;
+            color: #E5E5E5;
+            background-color: #4D6186;
+            transition-duration: 0.3s;
+    margin-top:2%;
+    margin-left:2%;}
+
+
+        .next_button:hover,
+        next_button:focus {
+            opacity: 79%;
+        }
+    
+    .next_button i {font-size: 1.4em;}
+
+    #myDIV {font-size:1.2em;
+    padding-top:2em;
+           padding-right:16.5em;
+    line-height: 1.8em;}
+    
+    
+    #du_skal {background-color: #4D6186;
+       
+}
+    
+    
+    #du_skal h2 {text-align: center;
+    color:white;
+   padding-top:4%;
+    font-size:2.4em;}
+    
+     #du_skal h3 {text-align: center;
+    color:white;
+    font-size: 1.8em;
+    margin-top:-3em}
+    
+    
+    #knap {padding-left:43%;
+padding-top:0.5%;
+    padding-bottom: 5%;
+}
+
+#knap i {font-size:1.8em;}
+    
+    
+       #article1 h3 {font-size:1.5em;
+        padding-left:18em;
+     padding-right:18em;} 
+    
+    
+   
+    .header li {
+        float: left;
+    }
+    
+    .header {height:115px;}
+
+    .header li a {
+        padding: 43px 30px;
+        font-size: 1.4em;
+        color:white;
+    }
+
+    .header ul {
+        background-color: transparent;
+    }
+
+    .header ul a {
+        border-bottom: none;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+    
+
+  .header #logo {
+              padding-top:3.5%;
+              padding-left:2%;
+}
+           
+    
+    .header ul {
+        background-color: transparent;
+    }
+
+    .header ul a {
+        border-bottom: none;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+    
+    
+    .header_underside li {
+        float: left;
+    }
+    
+    .header_underside {height:90px;}
+
+    .header_underside li a {
+        padding: 35px 30px;
+        font-size: 1.4em;
+        color:white;
+    }
+
+    .header_underside ul {
+        background-color: transparent;
+    }
+
+    .header_underside ul a {
+        border-bottom: none;
+    }
+
+    .header_underside .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header_underside .menu-icon {
+        display: none;
+    }
+    
+
+  .header_underside #logo {
+              padding-top:3.5%;
+              padding-left:2%;
+}
+           
+    
+    .header_underside ul {
+        background-color: transparent;
+    }
+
+    .header_underside ul a {
+        border-bottom: none;
+    }
+
+    .header_underside .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header_underside .menu-icon {
+        display: none;
+    }
+    
+    
+    
+        
+     /* desktop - ydelser
+-----------------------------------------------------------------------------*/      
+     .flex-container {
+  display: flex;
+   
+}
+
+    #infographic2 {
+        display: none;
+    }
+  
+     #infographic3 {
+         display: none;
+    }
+    
+    .flex-container img {
+        display: none;
+    }
+    
+    #infographicstor img {
+        display: block;
+    }
+    
+    #produkt_fotos p {
+        width: 60%;
+        margin-left: 20%;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+    
+    
+     #produkt_fotos h2 {
+        width: 60%;
+        margin-left: 20.5%;
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+    
+    #p_fotos h2{
+        padding-top: 70px;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+    
+    
+/*
+    #infographicstor{
+        margin-bottom: -50px;
+    }
+*/
+    
+    .infographic4 p{
+    margin-bottom: 2%;
+    }
+    
+    
+    
+    /* desktop - booking
+-----------------------------------------------------------------------------*/
+
+ 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+      position: sticky;
+
+}
+
+/*
+input[type=submit] {
+  background-color: #4D6186;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+     font-size:1em;
+    margin-left:0%;
+    position: sticky;
+    margin-top:-5%;
+    
+
+    
+}
+*/
+    
+    
+.submit {
+  background-color: #4D6186;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+     font-size:1em;
+    margin-left:10%;
+
+    margin-top:-5%;
+    
+
+    
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+   
+}
+    
+    .submit {
+  background-color: #4D6186;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+     font-size:2em;
+    margin-left:20%;
+    position: sticky;
+    margin-top:18%;
+    
+
+    
+}
+
+.submit:hover {
+  background-color: grey;
+   
+}
+
+#Emailform{
+    margin-top: -50px;
+    padding-left: 20%;
+    padding-right: 20%;
+     font-size:2em;
+    line-height: 1.5em;
+   
+}   
+
+
+#Email-kommentar input {
+    height: 200px;
+     margin-bottom: 25px;
+    
+   
+}
+
+
+
+    
+    /* desktop - Om JK
+-----------------------------------------------------------------------------*/    
+    
+    #marker {
+background-image: url('https://www.freeiconspng.com/thumbs/location-icon-png/location-map-pins-png-3.png');
+background-size: cover;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+cursor: pointer;
+}
+ 
+.mapboxgl-popup {
+max-width: 200px;
+    color:black;
+}
+    
+    
+    
+    
+    #JK-text{
+        display: none;
+        
+    }
+    
+    
+    #JK-text-desctop{
+        display: flex;
+       justify-content: center;
+        margin-left: 18em;
+   
+
+  
+    }
+    
+    #JK-text-desctop img{
+        width: 30%;
+        height: 100%;
+        margin-top: 10px;
+        margin-right: 18em;
+    }
+    
+    #titel-text-omJK {
+        font-family: 'Oswald', sans-serif;
+        font-size: 48px;
+        margin-bottom: 5%;
+        margin-top:-2%;
+    }
+    
+    #titel-text-omJK{
+    display: block;
+}
+
+
+    
+    
+        /* desktop - Footer
+-----------------------------------------------------------------------------*/ 
+    
+    
+    
+    
+    #text-footer{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+    color: white;
+
+    
+}
+
+#text-footer > div {
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+        
+
+
+
+
+
+
+
+    
+/* media only screnn part 6
+-----------------------------------------------------------------------------*/
+    @media only screen and (min-width: 1300px) { 
+        
+    
+        .header #logo {width:165px;
+    margin-top:-1.8%;}
+        
+        
+        .header_underside #logo {width:165px;
+    margin-top:-1.8%;}
+
+
+        
+}
+
+    @media only screen and (min-width: 1900px) {
+        #wrapper {
+            width: 1900px;
+            margin: 0 auto;
+        } 
+        
+        
+}
