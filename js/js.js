@@ -38,19 +38,6 @@ function playVid() {
 } 
 
 
-// redigeringsvideoen //
-
-// metoden går ind og finder det id i html filen, som hedder 'myVideo' //
-var vid = document.getElementById("myVideo2"); 
-
-// play() metoden afspiller videoen, dvs. når man klikker på knappen - on click funktion // 
-function playVid() { 
-  vid.play(); 
-} 
-
-
-
-
 
 // KORTET PÅ OM JK SIDEN //
 
